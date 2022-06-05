@@ -15,4 +15,5 @@ Map<String,dynamic>myMap={
 print(myMap);
 var b="Efte";
 print(b);
+print(b.runtimeType);
 }
