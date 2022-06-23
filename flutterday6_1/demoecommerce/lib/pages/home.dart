@@ -296,7 +296,7 @@ class HomeScreen extends StatelessWidget {
                       //  color:Colors.amber,
                       //you have to set color in decoration
                       decoration: BoxDecoration(
-                        color: Colors.amber,
+                        color: Color.fromARGB(255, 59, 204, 76),
                         //you have to set color in decoration
                         borderRadius: BorderRadius.all(Radius.circular(10)),
                       ),
