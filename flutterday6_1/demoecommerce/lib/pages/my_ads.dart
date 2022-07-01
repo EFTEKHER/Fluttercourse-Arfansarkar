@@ -2,33 +2,59 @@ import 'package:demoecommerce/pages/my_ads/My_Ads_one.dart';
 import 'package:demoecommerce/pages/my_ads/My_Favourites_two.dart';
 import 'package:flutter/material.dart';
 
-class MyAdsScreen extends StatelessWidget {
+class MyAdsScreen extends StatefulWidget  {
   
 
   @override
+  State<MyAdsScreen> createState() => _MyAdsScreenState();
+}
+
+class _MyAdsScreenState extends State<MyAdsScreen> with TickerProviderStateMixin {
+  late TabController _tabController;
+  @override
+  void initState() {
+    _tabController=TabController(length: 2, vsync: this);
+    super.initState();
+  }
+  @override
   Widget build(BuildContext context){
-   return MaterialApp(
-    debugShowCheckedModeBanner: false,
-  home: DefaultTabController(
-    length: 2,
-    child: Scaffold(
-      appBar: AppBar(
-        title: Text("My Ads",),centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 193, 155, 155),
-        bottom: const TabBar(
-          tabs: [
-            Tab( text: "My Ads",    icon: Icon(Icons.card_travel_sharp)),
-            Tab(text:"My Favourites",icon: Icon(Icons.favorite)),
-           
-          ],
-        ),
-      ),
-      body: TabBarView(children: [
-        MyAdsOne(),MyFavouriteTwo(),
-      ]),
-    ),
+  return Scaffold(
+appBar: AppBar(
+backgroundColor: Colors.white,
+centerTitle: true,
+          title: Text(
+            'MY ADS',
+            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+          ),
+bottom: TabBar( controller: _tabController ,tabs: const[
 
+   Tab(
+                  child: Text(
+                    'My Ads',
+                    style: TextStyle(color: Colors.black),
+                  ),
+                  icon: Icon(
+                    Icons.shopping_bag_outlined,
+                    color: Colors.black,
+                  )),
+              Tab(
+                  child: Text(
+                    'My Favourites',
+                    style: TextStyle(color: Colors.black),
+                  ),
+                  icon: Icon(
+                    Icons.favorite_border,
+                    color: Colors.black,
+                  )),
+]),
 
-  ),
-);
+),
+body:TabBarView( controller: _tabController ,children: [
+MyAdsOne(),
+MyFavouriteTwo(),
+
+])
+
+  );
+
   }}

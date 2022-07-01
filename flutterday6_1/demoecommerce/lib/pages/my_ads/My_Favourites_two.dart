@@ -5,17 +5,18 @@ class MyFavouriteTwo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return  Scaffold(
         body: ListView.builder(
           scrollDirection: Axis.vertical,
           itemCount: 100,
           itemBuilder: ((context, index) {
           
           return Card(
+            
             elevation: 5,
             child: ListTile(
+              onTap: (() {
+              }),
 leading: CircleAvatar(backgroundImage: AssetImage("assets/image.png"),
     ),
                            title: Text("Apple Watch", style: TextStyle(fontSize: 26,fontWeight: FontWeight.bold),),
@@ -25,7 +26,7 @@ leading: CircleAvatar(backgroundImage: AssetImage("assets/image.png"),
             ),
           );
         })),
-        )
+        
         );
     
   }
