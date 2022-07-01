@@ -316,7 +316,7 @@ class HomeScreen extends StatelessWidget {
                                             alignment: Alignment.bottomRight,
                                             child: Image.asset(
                                                 'assets/vegetables.png',
-                                                width: 140))
+                                                width: 120))
                                       ],
                                     ),
                                   ),
@@ -347,7 +347,7 @@ class HomeScreen extends StatelessWidget {
                                             alignment: Alignment.bottomRight,
                                             child: Image.asset(
                                                 'assets/vegetables.png',
-                                                width: 140))
+                                                width: 120))
                                       ],
                                     ),
                                   ),
@@ -378,7 +378,7 @@ class HomeScreen extends StatelessWidget {
                                             alignment: Alignment.bottomRight,
                                             child: Image.asset(
                                                 'assets/vegetables.png',
-                                                width: 140))
+                                                width: 120))
                                       ],
                                     ),
                                   ),
@@ -409,7 +409,7 @@ class HomeScreen extends StatelessWidget {
                                             alignment: Alignment.bottomRight,
                                             child: Image.asset(
                                                 'assets/vegetables.png',
-                                                width: 140))
+                                                width: 120))
                                       ],
                                     ),
                                   ),
