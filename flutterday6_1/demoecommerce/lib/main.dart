@@ -1,4 +1,6 @@
 import 'package:demoecommerce/bottom_nav_controller.dart';
+import 'package:demoecommerce/pages/add.dart';
+import 'package:demoecommerce/pages/details_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,6 +20,12 @@ class MyApp extends StatelessWidget {
        
         primaryColor: Colors.white,
       ),
+      initialRoute: '/',
+
+  routes: {
+    '/first-screen':(context) => AddScreen(),
+    '/second-screen':(context) => detailsScreen(),
+  },
       home:  BottomNavController(),
     );
   }

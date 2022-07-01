@@ -6,7 +6,10 @@ class detailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child:Text("Details Screen")),
+      body: Center(child:ElevatedButton(onPressed: (() {
+          // Navigator.pop(context);
+           Navigator.pushNamed(context, '/first-screen');
+          }), child: Text('Second Screen')),),
     );
     
   }
