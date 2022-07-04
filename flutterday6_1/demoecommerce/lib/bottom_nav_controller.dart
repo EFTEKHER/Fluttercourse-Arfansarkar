@@ -4,6 +4,7 @@ import 'package:demoecommerce/pages/chat.dart';
 import 'package:demoecommerce/pages/home.dart';
 import 'package:demoecommerce/pages/my_ads.dart';
 import 'package:flutter/material.dart';
+import './pages/language_screen.dart';
 
 /*
 1st -Bottom navigation Bar
@@ -50,6 +51,7 @@ class _BottomNavControllerState extends State<BottomNavController> {
     AddScreen(),
     ChatScreen(),
     AccountScreen(),
+    language_screen()
   ];
 
   int _currentIndex = 0;
@@ -82,6 +84,10 @@ class _BottomNavControllerState extends State<BottomNavController> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
+            label: "Account",
+          ),
+           BottomNavigationBarItem(
+            icon: Icon(Icons.language),
             label: "Account",
           ),
         ],

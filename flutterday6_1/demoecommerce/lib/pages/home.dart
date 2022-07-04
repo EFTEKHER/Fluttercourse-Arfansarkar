@@ -256,6 +256,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("Ecommerce"),centerTitle: true,),
         body: SafeArea(
             child: NestedScrollView(
                 headerSliverBuilder: (context, innerBoxIsScrolled) {
@@ -263,7 +264,7 @@ class HomeScreen extends StatelessWidget {
                     SliverAppBar(
                        collapsedHeight: 350,
                 expandedHeight: 350,
-                backgroundColor: Colors.white,
+                backgroundColor: Color.fromARGB(255, 17, 16, 16),
                       flexibleSpace: Column(children: [
                           Padding(
                               padding: const EdgeInsets.only(left: 20, top: 25),
