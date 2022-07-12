@@ -1,7 +1,8 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 
-import 'details_screen.dart';
+
+
 
 class AddScreen extends StatelessWidget {
   
