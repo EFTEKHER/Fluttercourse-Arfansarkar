@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "759679985277",
+    "project_id": "readwrite-61165",
+    "storage_bucket": "readwrite-61165.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759679985277:android:8b1086555d92e4ec787314",
+        "android_client_info": {
+          "package_name": "com.example.flutter_firebasee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759679985277-bscma7gl16qimdedtcqpes0b3jlffl1v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM3neZKQ12o_RtwWoHUKg_4bdiY_YxvNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759679985277-bscma7gl16qimdedtcqpes0b3jlffl1v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
